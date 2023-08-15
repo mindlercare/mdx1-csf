@@ -20,7 +20,7 @@
   "scripts": {
     "test": "jest",
     "build": "tsup",
-    "start": "yarn build && yarn storybook -- --quiet\"",
+    "start": "yarn build && yarn storybook --quiet",
     "release": "STORYBOOK_DISABLE_TELEMETRY=1 yarn build && auto shipit",
     "storybook": "STORYBOOK_DISABLE_TELEMETRY=1 STORYBOOK_ENABLE_CRASH_REPORTS=false storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22"
+    "@mdx-js/react": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
